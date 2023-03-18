@@ -4,13 +4,13 @@ const { Tag, Product, ProductTag } = require("../../models");
 // The `/api/tags` endpoint
 
 router.get("/", async (req, res) => {
-  // Use the .findAll({ include: [{ model: ProductTag }], })
+  // Use the .findAll({ include: [{ model: ProductTag }, { Product }], })
   // find all tags
   // be sure to include its associated Product data
 });
 
 router.get("/:id", async (req, res) => {
-  // Use the .findByPk(req.body.id, { inlcude: [{ model: ProductTag }]})
+  // Use the .findByPk(req.body.id, { inlcude: [{ model: ProductTag }, { Product }]})
   // find a single tag by its `id`
   // be sure to include its associated Product data
 });
